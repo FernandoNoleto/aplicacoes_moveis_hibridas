@@ -1,0 +1,86 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Home</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+    <ion-header>
+        <ion-navbar>
+            <ion-title>Recomendado para você</ion-title>
+        </ion-navbar>
+    </ion-header>
+
+    <ion-card>
+        <img src="assets/img/brasao.jpg"/>
+        <ion-card-content>
+            <ion-card-title>
+                Universidade Federal do Tocantins
+            </ion-card-title>
+            <p>
+                The most popular industrial group ever, and largely
+                responsible for bringing the music to a mass audience.
+            </p>
+        </ion-card-content>
+    </ion-card>
+
+<ion-card>
+    <img src="assets/img/extra.jpg"/>
+    <ion-card-content>
+        <ion-card-title>
+            Universidade Federal do Tocantins
+        </ion-card-title>
+        <p>
+            The most popular industrial group ever, and largely
+            responsible for bringing the music to a mass audience.
+        </p>
+    </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="assets/img/atacadao.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Universidade Federal do Tocantins
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <img src="assets/img/carrefour.png"/>
+  <ion-card-content>
+    <ion-card-title>
+      Universidade Federal do Tocantins
+      </ion-card-title>
+    <p>
+      The most popular industrial group ever, and largely
+      responsible for bringing the music to a mass audience.
+    </p>
+  </ion-card-content>
+</ion-card>
+
+<ion-card-content>
+      Latest Picture:
+      <img [src]="base64Image" *ngIf="base64Image" />
+</ion-card-content>
+
+<ion-fab right bottom>
+    <button ion-fab color="dark">
+        <ion-icon name="add"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+        <button ion-fab (click)="takePicture()"><ion-icon name="camera"></ion-icon></button>
+        <button ion-fab (click)="pickImageFromGallery()"><ion-icon name="photos"></ion-icon></button>
+    </ion-fab-list>
+</ion-fab>
+
+
+</ion-content>
